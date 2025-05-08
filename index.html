@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">MyShop</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Product Section -->
+  <section class="product-container">
+    <div class="product-image">
+      <img src="https://picsum.photos/id/1015/600/400" alt="Main Product" id="mainImage">
+      <div class="gallery">
+        <img src="https://picsum.photos/id/1015/100/100" alt="Thumb" onclick="changeImage(this.src)">
+        <img src="https://picsum.photos/id/1016/100/100" alt="Thumb" onclick="changeImage(this.src)">
+        <img src="https://picsum.photos/id/1018/100/100" alt="Thumb" onclick="changeImage(this.src)">
+      </div>
+    </div>
+    <div class="product-details">
+      <h1>Premium Headphones</h1>
+      <p class="price">$149.99</p>
+      <p class="description">
+        Experience immersive sound with our premium headphones. Designed for comfort and top-tier audio quality.
+      </p>
+      <button class="btn">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Customer Reviews -->
+  <section class="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review">
+      <p><strong>Jane D.</strong> ★★★★★</p>
+      <p>Great sound and comfortable to wear for hours!</p>
+    </div>
+    <div class="review">
+      <p><strong>Mike S.</strong> ★★★★☆</p>
+      <p>Awesome quality, though a bit pricey. Worth it!</p>
+    </div>
+  </section>
+
+  <!-- Related Products -->
+  <section class="related-products">
+    <h2>Related Products</h2>
+    <div class="related-products-grid">
+      <div class="product-card">
+        <img src="https://picsum.photos/id/1040/200/200" alt="Wireless Earbuds">
+        <h3>Wireless Earbuds</h3>
+        <p>$59.99</p>
+      </div>
+      <div class="product-card">
+        <img src="https://picsum.photos/id/1050/200/200" alt="Bluetooth Speaker">
+        <h3>Bluetooth Speaker</h3>
+        <p>$79.99</p>
+      </div>
+      <div class="product-card">
+        <img src="https://picsum.photos/id/1060/200/200" alt="Noise Cancelling Headset">
+        <h3>Noise Cancelling Headset</h3>
+        <p>$189.99</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript for image gallery -->
+  <script>
+    function changeImage(src) {
+      document.getElementById('mainImage').src = src;
+    }
+  </script>
+
+</body>
+</html>
